@@ -1,0 +1,485 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mundo Plantas</title>
+
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BARRA DE NAVEGACIÓN
+         ========================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🌱 Mundo Plantas
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#plantas">Plantas</a>
+                </li>
+
+                <li>
+                    <a href="#mantenimiento">
+                        Quién mantiene el sitio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             PRESENTACIÓN
+             ========================= -->
+
+        <section class="hero">
+
+            <h1>🌿 Mundo Plantas</h1>
+
+            <p>
+                Descubrí diferentes especies de plantas de interior
+                y exterior, conocé sus características y encontrá
+                información útil para su cuidado.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             PLANTAS
+             ========================= -->
+
+        <section id="plantas" class="plantas-section">
+
+            <h2>Tipos de plantas</h2>
+
+            <p class="descripcion">
+                Seleccioná una categoría para conocer las plantas
+                disponibles.
+            </p>
+
+
+            <!-- =========================
+                 RADIO BUTTONS
+                 ========================= -->
+
+            <div class="categorias">
+
+                <input
+                    type="radio"
+                    id="interior"
+                    name="categoria"
+                    checked
+                >
+
+                <label for="interior">
+                    🌿 Plantas de interior
+                </label>
+
+
+                <input
+                    type="radio"
+                    id="exterior"
+                    name="categoria"
+                >
+
+                <label for="exterior">
+                    🌻 Plantas de exterior
+                </label>
+
+            </div>
+
+
+            <!-- =========================
+                 PLANTAS DE INTERIOR
+                 ========================= -->
+
+            <div id="plantas-interior" class="plantas-container">
+
+                <h3>Plantas de interior</h3>
+
+                <div class="plantas-grid">
+
+
+                    <!-- ZAMIOCULCAS -->
+
+                    <article class="planta-card">
+
+                        <img
+                            src="../imagenes/zamioculcas.jpeg"
+                            alt="Planta Zamioculcas"
+                        >
+
+                        <h4>Zamioculcas</h4>
+
+                        <p>
+                            Planta resistente y de fácil cuidado,
+                            ideal para interiores.
+                        </p>
+
+                        <a
+                            href="../info/zamioculcas.jpg"
+                            download="informacion-zamioculcas.jpg"
+                            class="boton-info"
+                        >
+                            📄 Descargar información
+                        </a>
+
+                    </article>
+
+
+                    <!-- HELECHO DE BOSTON -->
+
+                    <article class="planta-card">
+
+                        <img
+                            src="../imagenes/helecho de boston.jpeg"
+                            alt="Helecho de Boston"
+                        >
+
+                        <h4>Helecho de Boston</h4>
+
+                        <p>
+                            Planta de follaje abundante que prefiere
+                            ambientes húmedos y luminosos.
+                        </p>
+
+                        <a
+                            href="../info/helecho de boston.jpeg"
+                            download="informacion-helecho-de-boston.jpeg"
+                            class="boton-info"
+                        >
+                            📄 Descargar información
+                        </a>
+
+                    </article>
+
+
+                    <!-- POTUS -->
+
+                    <article class="planta-card">
+
+                        <img
+                            src="../imagenes/potus.jpeg"
+                            alt="Planta Potus"
+                        >
+
+                        <h4>Potus</h4>
+
+                        <p>
+                            Planta muy adaptable, conocida por su
+                            crecimiento y facilidad de mantenimiento.
+                        </p>
+
+                        <a
+                            href="../info/potus.jpeg"
+                            download="informacion-potus.jpeg"
+                            class="boton-info"
+                        >
+                            📄 Descargar información
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 PLANTAS DE EXTERIOR
+                 ========================= -->
+
+            <div id="plantas-exterior" class="plantas-container">
+
+                <h3>Plantas de exterior</h3>
+
+                <div class="plantas-grid">
+
+
+                    <!-- GERANIO -->
+
+                    <article class="planta-card">
+
+                        <img
+                            src="../imagenes/geranio.jpeg"
+                            alt="Geranio"
+                        >
+
+                        <h4>Geranio</h4>
+
+                        <p>
+                            Planta muy popular por sus flores coloridas
+                            y su buena adaptación al exterior.
+                        </p>
+
+                        <a
+                            href="../info/geranio.jpeg"
+                            download="informacion-geranio.jpeg"
+                            class="boton-info"
+                        >
+                            📄 Descargar información
+                        </a>
+
+                    </article>
+
+
+                    <!-- LAVANDA -->
+
+                    <article class="planta-card">
+
+                        <img
+                            src="../imagenes/lavanda.jpeg"
+                            alt="Lavanda"
+                        >
+
+                        <h4>Lavanda</h4>
+
+                        <p>
+                            Planta aromática reconocida por sus flores
+                            violetas y su agradable aroma.
+                        </p>
+
+                        <a
+                            href="../info/lavanda.jpeg"
+                            download="informacion-lavanda.jpeg"
+                            class="boton-info"
+                        >
+                            📄 Descargar información
+                        </a>
+
+                    </article>
+
+
+                    <!-- ROMERO -->
+
+                    <article class="planta-card">
+
+                        <img
+                            src="../imagenes/romero.jpeg"
+                            alt="Romero"
+                        >
+
+                        <h4>Romero</h4>
+
+                        <p>
+                            Planta aromática resistente, utilizada
+                            tanto en jardinería como en cocina.
+                        </p>
+
+                        <a
+                            href="../info/romero.jpeg"
+                            download="informacion-romero.jpeg"
+                            class="boton-info"
+                        >
+                            📄 Descargar información
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUIÉN MANTIENE EL SITIO
+             ========================= -->
+
+        <section id="mantenimiento" class="mantenimiento">
+
+            <h2>¿Quién mantiene este sitio?</h2>
+
+            <div class="mantenimiento-contenido">
+
+                <div class="icono-mantenimiento">
+                    🌱
+                </div>
+
+                <div>
+
+                    <h3>Información del sitio</h3>
+
+                    <p>
+                        Este sitio web es mantenido con el objetivo
+                        de brindar información sencilla y accesible
+                        sobre diferentes especies de plantas.
+                    </p>
+
+                    <p>
+                        El contenido se organiza en categorías de
+                        plantas de interior y exterior para facilitar
+                        la búsqueda de información.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+             ========================= -->
+
+        <section id="contacto" class="contacto">
+
+            <h2>Contacto</h2>
+
+            <p>
+                ¿Tenés alguna consulta? Completá el siguiente
+                formulario.
+            </p>
+
+
+            <form action="#" method="post">
+
+
+                <!-- NOMBRE Y APELLIDO -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="apellido">
+                            Apellido
+                        </label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- MAIL Y CELULAR -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="mail">
+                            Mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="mail"
+                            name="mail"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="celular">
+                            Celular
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="celular"
+                            name="celular"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- MENSAJE -->
+
+                <div class="form-group">
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        placeholder="Escribí tu mensaje..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- BOTÓN -->
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+         ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Mundo Plantas - Sitio web estático
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
