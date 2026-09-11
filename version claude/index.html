@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivero Verde | Plantas de interior y exterior</title>
+<link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="cabecera">
+  <div class="logo">🌿 Vivero Verde</div>
+  <nav class="navbar">
+    <a href="#plantas">Plantas</a>
+    <a href="#nosotros">Sobre nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <h1>Encontrá la planta ideal para tu espacio</h1>
+  <p>Interior o exterior: te ayudamos a elegir y cuidar cada especie.</p>
+</section>
+
+<!-- ===================== PLANTAS ===================== -->
+<section id="plantas" class="seccion">
+  <h2>Nuestras plantas</h2>
+  <p class="subtitulo">Seleccioná una categoría para ver las plantas disponibles:</p>
+
+  <!-- Radio buttons de filtro (control 100% CSS, sin JS) -->
+  <input type="radio" name="categoria" id="cat-interior" class="filtro-input" checked>
+  <input type="radio" name="categoria" id="cat-exterior" class="filtro-input">
+
+  <div class="filtro-opciones">
+    <label for="cat-interior" class="filtro-label">🏠 Interior</label>
+    <label for="cat-exterior" class="filtro-label">🌳 Exterior</label>
+  </div>
+
+  <!-- ---------- GRUPO INTERIOR ---------- -->
+  <div class="grupo grupo-interior">
+
+    <article class="planta-card interior">
+      <h3>Zamioculcas</h3>
+      <img src="../imagenes/zamioculcas.jpeg" alt="Zamioculcas">
+      <a class="info-link" href="../info/zamioculcas.jpg" download>+ Info</a>
+    </article>
+
+    <article class="planta-card interior">
+      <h3>Helecho de Boston</h3>
+      <img src="../imagenes/helecho de boston.jpeg" alt="Helecho de Boston">
+      <a class="info-link" href="../info/helecho de boston.jpeg" download>+ Info</a>
+    </article>
+
+    <article class="planta-card interior">
+      <h3>Potus</h3>
+      <img src="../imagenes/potus.jpeg" alt="Potus">
+      <a class="info-link" href="../info/potus.jpeg" download>+ Info</a>
+    </article>
+
+  </div>
+
+  <!-- ---------- GRUPO EXTERIOR ---------- -->
+  <div class="grupo grupo-exterior">
+
+    <article class="planta-card exterior">
+      <h3>Geranio</h3>
+      <img src="../imagenes/geranio.jpeg" alt="Geranio">
+      <a class="info-link" href="../info/geranio.jpeg" download>+ Info</a>
+    </article>
+
+    <article class="planta-card exterior">
+      <h3>Lavanda</h3>
+      <img src="../imagenes/lavanda.jpeg" alt="Lavanda">
+      <a class="info-link" href="../info/lavanda.jpeg" download>+ Info</a>
+    </article>
+
+    <article class="planta-card exterior">
+      <h3>Romero</h3>
+      <img src="../imagenes/romero.jpeg" alt="Romero">
+      <a class="info-link" href="../info/romero.jpeg" download>+ Info</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== SOBRE NOSOTROS ===================== -->
+<section id="nosotros" class="seccion seccion-alterna">
+  <h2>Sobre nosotros</h2>
+  <div class="nosotros-contenido">
+    <p>
+      <strong>Vivero Verde</strong> es un emprendimiento familiar dedicado al cultivo y
+      cuidado de plantas de interior y exterior. Este sitio es mantenido por
+      <strong>María López</strong>, ingeniera agrónoma y responsable del vivero,
+      junto a su equipo de jardineros.
+    </p>
+    <p>
+      Nuestro objetivo es acercar información clara y confiable para que cada
+      persona pueda elegir y cuidar sus plantas de la mejor manera posible.
+    </p>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section id="contacto" class="seccion">
+  <h2>Contacto</h2>
+  <p class="subtitulo">¿Tenés alguna consulta? Escribinos.</p>
+
+  <form class="form-contacto" action="#" method="get">
+    <div class="form-fila">
+      <div class="form-campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      </div>
+      <div class="form-campo">
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+      </div>
+    </div>
+
+    <div class="form-fila">
+      <div class="form-campo">
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="mail" placeholder="tu@mail.com" required>
+      </div>
+      <div class="form-campo">
+        <label for="celular">Celular</label>
+        <input type="tel" id="celular" name="celular" placeholder="Tu número de celular">
+      </div>
+    </div>
+
+    <div class="form-campo form-campo-full">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+    </div>
+
+    <button type="submit" class="btn-enviar">Enviar</button>
+  </form>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="pie">
+  <p>&copy; 2026 Vivero Verde. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
